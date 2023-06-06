@@ -15,6 +15,6 @@ def blog(request):
 
 
 def get_post(request, post_name):
-    template = select_template([f"{post_name}.html", 'post_not_found.html'])
+    template = select_template([f"{post_name}.html", "post_not_found.html"])
 
     return HttpResponse(template.render())
