@@ -5,6 +5,12 @@
     <title>Blog</title>
 </head>
 <body>
-
+    <div class="content">
+        {% for post in post_list %}
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.description }}</p>
+            <a href="{{ post.slug }}">Read more</a>
+        {% endfor %}
+    </div>
 </body>
 </html>

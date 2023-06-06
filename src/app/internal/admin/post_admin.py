@@ -5,4 +5,4 @@ from app.internal.models.post import Post
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    pass
+    prepopulated_fields = {"slug": ["title"]}
