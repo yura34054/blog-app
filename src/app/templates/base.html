@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Yura's site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block extrahead %}{% endblock %}
+</head>
+
+<body>
+   {% block nav %}
+    <nav class="topnav">
+        {% block nav-home %}<a href={% url 'index' %}>Home</a>{% endblock %}
+        {% block nav-blog %}<a href="{% url 'blog' %}">Blog</a>{% endblock %}
+    </nav>
+    {% endblock %}
+
+   <div class="content">
+        {% block content %}{% endblock %}
+   </div>
+</body>
+</html>
