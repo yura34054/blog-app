@@ -5,14 +5,14 @@
 
 .container {
     padding: 1px 2%;
-    width: 66%;
+    width: 61%;
 
     display: flex;
     flex-flow: column;
 }
 
 .navigation {
-    width: 30%;
+    width: 35%;
 }
 
 @media (max-width: 992px) {

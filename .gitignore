@@ -9,3 +9,4 @@ __pycache__
 *.sqlite3
 .pytest_cache
 **/templates/posts/*
+django-static
