@@ -7,5 +7,6 @@ __pycache__
 /.env
 .idea
 *.sqlite3
-static
 .pytest_cache
+**/templates/posts/*
+django-static
