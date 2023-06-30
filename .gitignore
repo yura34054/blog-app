@@ -8,5 +8,4 @@ __pycache__
 .idea
 *.sqlite3
 .pytest_cache
-**/templates/posts/*
 django-static

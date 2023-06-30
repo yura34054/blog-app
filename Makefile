@@ -43,10 +43,10 @@ docker_pull:
 	docker pull ${IMAGE_NGINX}
 
 docker_up:
-	docker-compose up -d
+	docker compose up -d
 
 docker_migrate:
 	docker exec ${CONTAINER_NAME} python manage.py migrate
 
 docker_down:
-	docker-compose down
+	docker compose down
