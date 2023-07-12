@@ -51,3 +51,13 @@
     color: black;
 }
 
+@media (prefers-color-scheme: dark) {
+    .post {
+        background-color: #333333;
+    }
+
+    .post-link {
+        background-color: #002b3b;
+        border: 2px solid #002b3b;
+    }
+}

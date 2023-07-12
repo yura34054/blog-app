@@ -1,14 +1,4 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-flow: column;
-}
+@import url("./base.css");
 
 .topnav {
     flex: 0 1 auto;
@@ -37,4 +27,14 @@ body {
 
 .content {
     flex: 1 1 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    .topnav {
+        background-color: black;
+    }
+
+    .topnav a.nav-active {
+        background-color: #002b3b;
+    }
 }
