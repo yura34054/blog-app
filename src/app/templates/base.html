@@ -5,10 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Yura's site{% endblock %}</title>
+    <link rel="icon" href="data:;base64,=">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+    <script src="{% static 'vendor/htmx.min.js' %}"></script>
     {% block extrahead %}{% endblock %}
 </head>
 
