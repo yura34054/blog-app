@@ -14,8 +14,36 @@
 
 {% block content %}
     <div class="title">
-        <h1>Welcome to my site!</h1>
-        <p>"First time I'm doing something interesting with my coding knowledge in two years."</p>
+        <h1>yuraaa.com</h1>
+        <p class="index-caption" id="caption" onclick="changeCaption()">
+            "First time I'm doing something interesting with my coding knowledge".
+        </p>
+
+        <script>
+            const caption_list = [
+                "First time I'm doing something interesting with my coding knowledge",
+                "Because 'yura' is taken and 'yuraa' seems like a typo",
+                "May contain htmx",
+                "Runs on the cheapest vps I could find",
+                "Sometimes works on mobile",
+                "Partially developed in Warsaw",
+                "Please hire me",
+                "Blog is abandoned on purpose",
+                "Messages inspired by Minecraft",
+                "{caption_list[Math.floor(Math.random()*caption_list.length)]}",
+            ]
+            const $caption = document.querySelector("#caption");
+
+            function changeCaption() {
+                $caption.style.opacity = 0;
+
+                    setTimeout(() => {
+                        $caption.textContent=`\"${caption_list[Math.floor(Math.random()*caption_list.length)]}\"`;
+                        $caption.style.opacity = 1;
+                    }, 500);
+            }
+
+        </script>
     </div>
 
     <div class="container">

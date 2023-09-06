@@ -18,6 +18,7 @@ env = environ.Env(
     SECRET_KEY=(str, ""),
     DEBUG=(bool, False),
     ALLOWED_HOSTS=(list, []),
+    CSRF_TRUSTED_ORIGINS=(list, []),
     DB_NAME=(str, ""),
     DB_USER=(str, ""),
     DB_PASSWORD=(str, ""),
@@ -41,6 +42,7 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG")
 
 ALLOWED_HOSTS = env("ALLOWED_HOSTS")
+CSRF_TRUSTED_ORIGINS = env("CSRF_TRUSTED_ORIGINS")
 
 # Application definition
 

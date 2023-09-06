@@ -11,6 +11,7 @@ services:
       - WAIT_HOSTS:${DB_HOST}:${DB_PORT}
     volumes:
       - static_volume:/app/django-static/
+      - ./src/app/templates/posts:/app/app/templates/posts
     expose:
       - ${WEB_PORT_INTERNAL}
     depends_on:

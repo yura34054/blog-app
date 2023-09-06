@@ -10,8 +10,7 @@ def index(request):
 
 
 def blog(request):
-    context = {"post_list": Post.objects.all()}
-    return HttpResponse(render(request, "blog.html", context))
+    return HttpResponse(render(request, "blog.html"))
 
 
 def get_post(request, post_slug):

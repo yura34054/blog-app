@@ -51,3 +51,28 @@
     color: black;
 }
 
+@media (prefers-color-scheme: dark) {
+    .post {
+        background-color: #333333;
+    }
+
+    .post:hover {
+        box-shadow: 0 8px 16px 0 rgba(128, 128, 128, 0.2);
+    }
+
+    .post-link {
+        background-color: #002b3b;
+        border: 2px solid #002b3b;
+    }
+
+    .post-link:hover {
+        background-color: lightgray;
+        color: black;
+    }
+}
+
+@media (max-device-width: 992px) {
+    .post {
+        margin: 10px 0;
+    }
+}
